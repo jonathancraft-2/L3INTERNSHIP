@@ -10,7 +10,7 @@
       <form class="space-y-6">
         
         <div>
-          <label class="block text-slate-700 mb-2 font-medium" >
+          <label class="block text-slate-700 mb-2 font-medium">
             Full Name
           </label>
 
@@ -18,11 +18,11 @@
             type="text"
             placeholder="Enter your name"
             class="w-full border border-slate-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          v-model="name">
+          >
         </div>
 
         <div>
-          <label class="block text-slate-700 mb-2 font-medium" >
+          <label class="block text-slate-700 mb-2 font-medium">
             Email
           </label>
 
@@ -30,11 +30,11 @@
             type="email"
             placeholder="Enter your email"
             class="w-full border border-slate-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          v-model="mail">
+          >
         </div>
 
         <div>
-          <label class="block text-slate-700 mb-2 font-medium" >
+          <label class="block text-slate-700 mb-2 font-medium">
             Message
           </label>
 
@@ -42,12 +42,12 @@
             rows="5"
             placeholder="Write your message"
             class="w-full border border-slate-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        v-model="msg"></textarea>
+          ></textarea>
         </div>
 
         <button
           class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-medium transition duration-300"
-          @click="submitted()">
+        >
           Send Message
         </button>
 
@@ -57,16 +57,3 @@
 
   </section>
 </template>
-<script setup>
-import { ref } from 'vue'
-
-const name = ref("")
-const mail = ref("")
-const msg = ref("")
-
-function submitted(){
-if(name.this.value == ""){
-    alert("Enter your name")
-}
-}
-</script>
